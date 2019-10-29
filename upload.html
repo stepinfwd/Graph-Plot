@@ -1,0 +1,148 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.js"></script>
+        <script src="c3/c3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.3/papaparse.js"></script>
+        <script rel="script" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <link rel="stylesheet/css" href="c3/c3.min.css">
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+
+   
+
+    <script type="text/javascript" src="javascript/upload.js">
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+      
+        <nav class="navbar navbar-expand-lg  navbar-light">
+                <a class="navbar-brand" href="index.html">ToolX</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav  ml-lg-auto ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                      </li>
+                 
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">Contact us</a>
+                    </li>
+                  </ul>
+                 
+                </div>
+              </nav>
+
+
+
+
+              
+
+<div class="graph_type">
+    <h2>CHOOSE THE TYPE OF GRAPH</h2>
+
+    <form>
+        <input type="checkbox" > BAR GRAPH<br>
+        <input type="checkbox"> PIE GRAPH <br>
+        <input type="checkbox">  LINE GRAPH<br><br>
+        <!-- <input class="border-prop2" type="submit" value="Submit"> -->
+    </form>
+
+</div>
+
+<div class="field_display">
+    <h2>FIELDS
+    </h2>
+
+    <div id="field"></div>
+    <button  class="border-prop2" type="submit" style="margin-top:1vw " onclick="selected_field()"> Submit</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="selected_fields">
+    <h2>SELECTED FIELDS</h2>
+    <p id="sel_field"></p>
+
+    <button type="button" class="border-prop2" data-toggle="modal" data-target="#myModal" class="border-prop2" onclick="createGraph()">Display Graph</button>
+</div>
+
+
+
+<!--Div that will hold the pie chart-->
+
+
+
+
+<!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Graph</h4>
+      </div>
+      <div class="modal-body">
+            <canvas id="myChart" ></canvas>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- Footer -->
+
+        <!-- Footer Links -->
+        <div class="container"></div>
+                     
+                <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+                    <div class="container text-center">
+                      <small style="color:white">Copyright &copy; ToolX 2019</small>
+                    </div>
+                  </footer>
+            <!-- Footer -->
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <!-- Bootstrap core JavaScript-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

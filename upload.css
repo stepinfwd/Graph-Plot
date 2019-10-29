@@ -1,0 +1,22 @@
+h1,h3,h2,h4{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.graph_type,.field_display,.selected_fields{
+    margin-left: 10vw;
+}
+.graph_type{
+    margin-top: 5vw;
+}
+body{
+    margin: 0 auto;
+}
+.border-prop2 {
+   
+    border: .1vw solid rgb(48, 48, 17);
+}
+.selected_fields{
+    margin-top: 2vw;
+
+}
+

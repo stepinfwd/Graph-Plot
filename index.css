@@ -1,0 +1,79 @@
+body{
+    margin: 0 auto;
+}
+.middle-portion 
+{
+    margin-top: 5vw;
+    
+}
+
+
+.card
+{
+text-align: center;
+}
+
+#next{
+    letter-spacing: .1vw;
+    background: black;
+    color: white;
+    width: 8vw;
+}
+footer{
+    margin-top: 10vw;
+  
+}
+.navbar-brand{
+    font-size: 1.5vw;
+    font-weight: 800;
+    margin-left:2vw;
+
+}
+
+
+#page-content {
+    flex: 1 0 auto;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+
+
+
+/* navbar styles */
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    font-family: 'Montserrat', sans-serif;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar-brand{
+    border-bottom: .2vw solid beige;
+
+}
+.border-prop {
+   
+    border: .2vw solid beige;
+}
+/* navbar style end */
+
+
+
+
+@media only screen and (max-width: 600px) 
+{
+    #next{
+        
+        width:22vw;
+    }
+    .navbar-brand{
+        font-size: 5vw;
+    }
+
+
+}
